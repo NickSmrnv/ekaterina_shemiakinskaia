@@ -167,7 +167,7 @@ function PublicationCard({
         >
           <span className="publication-card__index">{String(index + 1).padStart(2, '0')}</span>
           <span className="publication-card__logo" data-shape={item.logoShape} aria-hidden="true">
-            <img src={item.logoSrc} alt="" />
+            <img src={`${import.meta.env.BASE_URL}${item.logoSrc}`} alt="" />
           </span>
         </motion.div>
 

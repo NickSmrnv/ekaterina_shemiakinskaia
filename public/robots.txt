@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://nicksmrnv.github.io/ekaterina_shemiakinskaia/sitemap.xml

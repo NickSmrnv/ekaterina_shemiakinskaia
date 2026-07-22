@@ -75,12 +75,31 @@ public/
 
 Workflow `.github/workflows/deploy-pages.yml` собирает и публикует сайт при push в `main`.
 
+Адрес после публикации:
+
+```text
+https://nicksmrnv.github.io/ekaterina_shemiakinskaia/
+```
+
 1. Откройте **Settings → Pages** репозитория.
 2. В **Build and deployment → Source** выберите **GitHub Actions**.
 3. Отправьте изменения в ветку `main` или запустите workflow вручную.
 
-В Vite используется относительный `base`, поэтому ассеты корректно работают и в подпапке репозитория GitHub Pages.
+Workflow передает Vite базовый путь `/ekaterina_shemiakinskaia/`, а runtime-изображения используют `import.meta.env.BASE_URL`. Поэтому фото и логотипы корректно загружаются из подпапки GitHub Pages. Файл `.nojekyll` отключает обработку Jekyll.
 
 ## SEO
 
-В `index.html` настроены title, description, Open Graph, Twitter Card, robots, favicon, web manifest и JSON-LD для `Person`. Перед подключением собственного домена при желании можно заменить относительное изображение Open Graph на абсолютный URL опубликованного `og-image.jpg`.
+В `index.html` настроены title, description, canonical, Open Graph, Twitter Card, robots, favicon, web manifest и JSON-LD `ProfilePage` + `Person`. В `public/sitemap.xml` находится карта сайта для Google Search Console и Яндекс Вебмастера.
+
+После первой публикации:
+
+1. Добавьте сайт в Google Search Console и Яндекс Вебмастер.
+2. Получите выданные сервисами коды подтверждения.
+3. Добавьте в `<head>` файла `index.html` метатеги `google-site-verification` и `yandex-verification` с реальными кодами.
+4. Отправьте в обоих кабинетах карту сайта:
+
+```text
+https://nicksmrnv.github.io/ekaterina_shemiakinskaia/sitemap.xml
+```
+
+Проверочные коды нельзя заполнять заранее: Google и Яндекс создают их отдельно для подтвержденного аккаунта. У project-сайта GitHub Pages файл `robots.txt` расположен в подпапке репозитория, а не в корне `nicksmrnv.github.io`; поэтому sitemap следует обязательно отправить через кабинеты вебмастеров. Для полноценного корневого `robots.txt` понадобится собственный домен или отдельный репозиторий `nicksmrnv.github.io`.

@@ -104,7 +104,7 @@ export function Hero() {
         >
           <div className="hero__portrait-frame">
             <img
-              src="/hero-portrait.jpg"
+              src={`${import.meta.env.BASE_URL}hero-portrait.jpg`}
               alt="Екатерина Шемякинская"
               width="720"
               height="720"
