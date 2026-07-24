@@ -161,7 +161,7 @@ export function Contact() {
             copied={copyStatus === 'success'}
             onCopy={handleEmailCopy}
           />
-          <ContactLink label="Telegram-канал" value={contact.telegram} kind="telegram" />
+          <ContactLink label="Telegram" value={contact.telegram} kind="telegram" />
         </div>
       </motion.div>
 

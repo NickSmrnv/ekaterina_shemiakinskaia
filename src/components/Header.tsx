@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { navigation } from '../data/portfolio'
+import { ArrowUpRight } from './icons'
 
 export function Header() {
   const { scrollY } = useScroll()
@@ -27,7 +28,7 @@ export function Header() {
       </nav>
       <a className="site-header__contact" href="#contact">
         Связаться
-        <span aria-hidden="true">↗</span>
+        <ArrowUpRight className="site-header__contact-icon" />
       </a>
     </motion.header>
   )
