@@ -1,4 +1,14 @@
-export type Accent = 'blue' | 'coral' | 'acid' | 'mint' | 'lilac' | 'paper'
+export type Accent =
+  | 'blue'
+  | 'coral'
+  | 'acid'
+  | 'mint'
+  | 'lilac'
+  | 'paper'
+  | 'sky'
+  | 'peach'
+  | 'rose'
+  | 'amber'
 
 export interface Article {
   title: string
@@ -62,7 +72,7 @@ export const publications: Publication[] = [
     logoSrc: 'media-logos/forbes.svg',
     logoShape: 'mark',
     size: 'wide',
-    accent: 'coral',
+    accent: 'sky',
     articles: [
       {
         title: 'Трекер женского здоровья и поддержка матерей: какие продукты создают фемтех-проекты',
@@ -108,7 +118,7 @@ export const publications: Publication[] = [
     logoSrc: 'media-logos/femtech-force.jpg',
     logoShape: 'mark',
     size: 'compact',
-    accent: 'mint',
+    accent: 'rose',
     articles: [
       {
         title: 'Как отказ от экспериментов на животных может навредить здоровью женщин',
@@ -325,7 +335,7 @@ export const publications: Publication[] = [
     logoSrc: 'media-logos/knife.png',
     logoShape: 'mark',
     size: 'compact',
-    accent: 'paper',
+    accent: 'peach',
     articles: [
       {
         title: '«Спилить дерево должно быть дорого». Как вырастить лес в городе, какие реформы нужны в структурах, отвечающих за озеленение, и чем тут могут помочь неравнодушные горожане',
@@ -340,15 +350,15 @@ export const publications: Publication[] = [
     logoSrc: 'media-logos/paperpaper.svg',
     logoShape: 'wordmark',
     size: 'compact',
-    accent: 'coral',
+    accent: 'mint',
     articles: [
       {
         title: 'Болгарин Делян Балев — о дисциплинированности русских, плюсах петербургской погоды и пробежках в парке 300-летия',
-        url: 'https://paperpaper.ru/photos/bolgarin-delyan-balev-o-discipliniro/',
+        url: 'https://paperpaper.io/bolgarin-delyan-balev-o-discipliniro/',
       },
       {
         title: 'Куда поехать на «Ласточке» из Петербурга? 12 направлений — от пещер в Саблине до Рюрикова городища в Великом Новгороде',
-        url: 'https://paperpaper.ru/kuda-poehat-na-lastochke-iz-peterbu/',
+        url: 'https://paperpaper.io/kuda-poehat-na-lastochke-iz-peterbu/',
       },
     ],
   },
@@ -359,7 +369,7 @@ export const publications: Publication[] = [
     logoSrc: 'media-logos/tnf.png',
     logoShape: 'mark',
     size: 'wide',
-    accent: 'acid',
+    accent: 'amber',
     articles: [
       {
         title: 'ИИ может вдвое сократить расходы нефтегазовых компаний на разведку и разработку, но реальность пока другая',

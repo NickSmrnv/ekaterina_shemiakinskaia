@@ -14,6 +14,10 @@
   --acid: #c8f04b;
   --mint: #b9e5d2;
   --lilac: #c9b8ff;
+  --sky: #9fc5ff;
+  --peach: #ffc59d;
+  --rose: #f5b8d0;
+  --amber: #f2c969;
   --serif: 'Iowan Old Style', Baskerville, 'Times New Roman', serif;
   --sans: Inter, 'Avenir Next', Avenir, 'Helvetica Neue', Arial, sans-serif;
   color: var(--ink);
@@ -683,6 +687,22 @@ svg {
 
 .publication-card[data-accent='paper'] {
   --accent: var(--ink);
+}
+
+.publication-card[data-accent='sky'] {
+  --accent: var(--sky);
+}
+
+.publication-card[data-accent='peach'] {
+  --accent: var(--peach);
+}
+
+.publication-card[data-accent='rose'] {
+  --accent: var(--rose);
+}
+
+.publication-card[data-accent='amber'] {
+  --accent: var(--amber);
 }
 
 .publication-card__top {
@@ -1569,7 +1589,7 @@ svg {
   font-weight: 400;
   font-style: italic;
   line-height: 0.82;
-  letter-spacing: -0.065em;
+  letter-spacing: 0.01em;
 }
 
 .contact__main p {
