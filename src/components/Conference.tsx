@@ -34,7 +34,7 @@ export function Conference() {
             >
               <span className="conference-case__link-label">
                 <small>Femtech Force Jam</small>
-                <strong>Открыть сайт конференции</strong>
+                <strong>Открыть сайт спецпроекта</strong>
               </span>
               <span className="conference-case__link-icon">
                 <ArrowUpRight />

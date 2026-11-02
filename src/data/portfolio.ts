@@ -53,7 +53,7 @@ export interface ConferenceProject {
 
 export const navigation = [
   { label: 'Публикации', href: '#publications' },
-  { label: 'Конференция', href: '#conference' },
+  { label: 'Спецпроект', href: '#conference' },
   { label: 'Образование', href: '#education' },
 ]
 
@@ -459,7 +459,7 @@ export const conferenceProject: ConferenceProject = {
     },
     {
       title: 'Контент и продвижение',
-      description: 'Готовила анонсы и материалы о спикерах, темах и программе для продвижения конференции.',
+      description: 'Готовила анонсы и материалы о спикерах, темах и программе для продвижения спецпроекта.',
     },
     {
       title: 'Аудитория и эфир',
