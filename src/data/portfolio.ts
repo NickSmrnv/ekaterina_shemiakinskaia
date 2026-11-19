@@ -75,6 +75,10 @@ export const publications: Publication[] = [
     accent: 'sky',
     articles: [
       {
+        title: '«У всех так»: почему женщины годами терпят боль и тревожные гинекологические симптомы',
+        url: 'https://www.forbes.ru/forbes-woman/572637-u-vseh-tak-pocemu-zensiny-godami-terpat-bol-i-trevoznye-ginekologiceskie-simptomy',
+      },
+      {
         title: 'Трекер женского здоровья и поддержка матерей: какие продукты создают фемтех-проекты',
         url: 'https://www.forbes.ru/forbes-woman/554970-treker-zenskogo-zdorov-a-i-podderzka-materej-kakie-produkty-sozdaut-femteh-proekty',
       },
